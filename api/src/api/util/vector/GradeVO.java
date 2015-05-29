@@ -6,8 +6,8 @@ public class GradeVO {
 	
 	@Override
 	public String toString() {
-		return "name=" + name+", hak=" + hak + ", kor=" + kor 
-				+ ", eng=" + eng + ", math=" + math;
+		return "이름 : " + name+", 학점 : " + hak + ", 국어 : " + kor 
+				+ ", 영어 : " + eng + ", 수학 : " + math;
 	}
 	// 과목별 합계를 구하는 메소드
 	// 국어 + 영어 + 수학

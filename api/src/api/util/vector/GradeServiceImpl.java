@@ -3,17 +3,19 @@ package api.util.vector;
 import java.util.Vector;
 
 public class GradeServiceImpl implements GradeService{
-
+	
+	Vector<GradeVO> grade = new Vector<GradeVO>();
 	@Override
 	public void input(GradeVO vo) {
-		
+		grade.addElement(vo);
 	}
 
 	@Override
 	// 성적표를 출력하는 메소드
 	// vo.toString() 으로 처리 예상하고 있음.
 	public void print() {
-		
+		GradeVO vo = new GradeVO();
+		System.out.println(vo.toString());
 	}
 
 	@Override
