@@ -1,5 +1,6 @@
 package api.util.vector;
 
+import java.lang.management.GarbageCollectorMXBean;
 import java.util.Vector;
 
 public class GradeServiceImpl implements GradeService{
@@ -7,21 +8,27 @@ public class GradeServiceImpl implements GradeService{
 	Vector<GradeVO> grade = new Vector<GradeVO>();
 	@Override
 	public void input(GradeVO vo) {
-		grade.addElement(vo);
+			grade.addElement(vo);
+		
 	}
 
 	@Override
 	// 성적표를 출력하는 메소드
 	// vo.toString() 으로 처리 예상하고 있음.
 	public void print() {
-		GradeVO vo = new GradeVO();
-		System.out.println(vo.toString());
+		for(int i = 0 ; i< grade.size(); i++){
+		System.out.println(grade.elementAt(i).toString());
+		}
 	}
 
 	@Override
 	// 학번으로 성적을 검색해서 출력하는 메소드
 	public String searchGradeByHak(String hak) {
-		return null;
+		String gr = "";
+				if(grade.elements().nextElement().getHak().contains(hak)){
+					
+				}
+				return gr;
 	}
 
 	@Override
