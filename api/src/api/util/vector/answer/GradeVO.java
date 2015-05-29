@@ -1,4 +1,4 @@
-package api.util.vector;
+package api.util.vector.answer;
 
 public class GradeVO {
 	private int kor,eng,math;
@@ -6,8 +6,8 @@ public class GradeVO {
 	
 	@Override
 	public String toString() {
-		return "이름 : " + name+", 학점 : " + hak + ", 국어 : " + kor 
-				+ ", 영어 : " + eng + ", 수학 : " + math + ", 총점 : "+getTotal(kor, eng, math);
+		return "성적표 [이름 : " + name+", 학번 : " + hak + ", 국어 : " + kor 
+				+ ", 영어 : " + eng + ", 수학 : " + math + ", 총점 : "+getTotal(kor, eng, math)+"]";
 	}
 	// 과목별 합계를 구하는 메소드
 	// 국어 + 영어 + 수학

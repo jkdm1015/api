@@ -1,4 +1,4 @@
-package api.util.vector;
+package api.util.vector.answer;
 /*
  1. VO, Interface 클래스다이어그램
  2. VO getter, setter .. implement
