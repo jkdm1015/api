@@ -56,7 +56,7 @@ public class GradeServiceImpl implements GradeService {
 	@Override
 	// 종합점수 기준으로 내림차순 정렬
 	public void descGradeTotal() {
-
+		
 	}
 
 	@Override
